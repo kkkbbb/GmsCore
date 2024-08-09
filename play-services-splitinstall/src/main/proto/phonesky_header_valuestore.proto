@@ -1,0 +1,1051 @@
+//reverse from gp 41.2.21-31 [0][PR] 636997666
+syntax = "proto2";
+package com.google.android.phonesky.header;
+
+message aknj{
+  map<string,ayie> a = 2;
+}
+
+message ayie{
+  oneof c {
+    ayqb oneofField0 = 22;
+  }
+  optional awzq  A = 32;
+  optional aynu  d = 1;
+  optional aypz  e = 3;
+  optional ayfo  f = 5;
+  optional awyp  g = 6;
+  optional ayow  h = 9;
+  optional ayez  i = 10;
+  optional axau  j = 11;
+  optional aydy  k = 12;
+  optional axat  l = 14;
+  optional axcu  m = 15;
+  optional awzv  n = 16;
+  optional axbx  o = 18;
+  optional axbk  p = 19;
+  optional awyv  q = 20;
+  optional axcm  r = 21;
+  optional axzt  s = 23;
+  optional aypk  t = 24;
+  optional ayio  u = 25;
+  optional aygs  v = 26;
+  optional awnc  w = 27;
+  optional axcl  x = 28;
+  optional axcr  y = 30;
+  optional awyl  z = 31;
+}
+
+message awyl {
+  optional axcp  b = 1;
+  optional preferType  c = 3;
+  optional bool  d = 4;
+}
+
+message axcp {
+  optional double  b = 1;
+  optional double  c = 2;
+  optional int32  d = 3;
+  optional ayzl  e = 4;
+}
+
+enum preferType {
+    UNKNOWN_PREFERENCE = 0;
+    NOT_CONSENTED = 1;
+    V1_CONSENT = 2;
+}
+
+
+message axcr {
+
+}
+
+message axcl {
+  optional int64  b = 1;
+}
+
+message awnc {
+  optional string  b = 1;
+  optional int32  c = 2; //enum
+}
+
+message aygs {
+  optional string  b = 1;
+  optional aywr  c = 2;
+}
+
+message aywr {
+  optional int64 a = 1;
+  optional int32  b = 2;
+}
+
+message ayio {
+
+}
+
+message aypk {
+  optional int32  b = 3;
+}
+
+message axzt {
+
+}
+
+message axcm {
+  optional string  b = 1;
+  optional string  c = 2;
+  optional string  d = 3;
+  optional string  e = 4;
+  optional string  f = 5;
+  optional int64  g = 6;
+  optional string  h = 7;
+}
+
+message awyv {
+  optional awyw  b = 1;
+  optional string  c = 2;
+  optional bool  d = 3;
+}
+
+message awyw {
+  optional int32  b = 1;
+  optional string  c = 2;
+  optional string  d = 3;
+  optional int32  e = 4;
+}
+
+message axbk {
+
+}
+
+message axbx {
+  optional bytes  b = 1;
+  optional string  c = 3;
+  optional bool  d = 4;
+}
+
+message awzv {
+  optional string  b = 1;
+  optional string  c = 2;
+  optional string  d = 3;
+  optional string  e = 4;
+  optional string  f = 6;
+  repeated string  g = 7;
+}
+message axcu {
+  repeated string a = 1;
+}
+
+message axat {
+  repeated axas a =1;
+}
+
+message aydy {
+  optional int32 b = 1; //enum
+}
+
+message axau {
+  optional bytes  b = 1;
+}
+
+message ayez {
+    optional baxr b = 1;
+}
+
+message baxr {
+  optional string  b = 1;
+  optional string  c = 2;
+  optional bytes  d = 3;
+
+}
+
+message ayow {
+  optional string  b = 1;
+}
+
+message awyp {
+  optional string  b = 1;
+  optional string  c = 2;
+}
+
+message ayfo {
+    optional string  b = 1;
+}
+
+message aypz {
+
+}
+
+message aynu {
+    optional string  a = 1;
+}
+
+message ayqb{}
+
+message awzq{
+  repeated awzt a =1;
+}
+
+message awzt {
+  optional fixed64  b = 6;
+  optional string  c = 1;
+  optional deviceType  d = 2;
+  optional ayzl  e = 3;
+  optional ayzl  f = 9;
+  optional string  g = 4;
+  optional awgc  h = 5;
+  optional int32  i = 7;
+  optional bool  j = 8;
+  optional string  k = 10;
+  optional string  l = 11;
+  optional axas  m = 12;
+}
+
+message axas {
+  optional paurchaseType  b = 1;
+  optional int32  c = 2;
+  optional int32  d = 3;
+}
+
+enum paurchaseType {
+    UNKNOWN_ITEM_TYPE = 0;
+    ANDROID_APP = 1;
+    ANDROID_APP_DEVELOPER = 2;
+    ANDROID_IN_APP_ITEM = 3;
+    DYNAMIC_ANDROID_IN_APP_ITEM = 4;
+    ANDROID_APP_SUBSCRIPTION = 5;
+    DYNAMIC_ANDROID_APP_SUBSCRIPTION = 6;
+    MOVIE = 7;
+    TV_SHOW = 8;
+    TV_SEASON = 9;
+    TV_EPISODE  =10;
+    AUDIOBOOK  =11;
+    AUDIOBOOK_SERIES  =24;
+    EBOOK  =12;
+    EBOOK_SERIES  =13;
+    BOOK_AUTHOR  =14;
+    ALBUM  =15;
+    SONG  =16;
+    MUSIC_ARTIST  =17;
+    MAGAZINE  =18;
+    MAGAZINE_ISSUE  =19;
+    NEWSPAPER  =20;
+    NEWS_ISSUE  =21;
+    VOUCHER  =22;
+    YOUTUBE_COMMERCE_ITEM  =25;
+    LOYALTY_REWARD  =26;
+    BOOK_SUBSCRIPTION  =27;
+    LOYALTY_VOUCHER  =28;
+    LOYALTY_PLAY_CREDIT  =29;
+}
+
+enum deviceType {
+    NO_DEVICE = 0;
+    PHONE =1 ;
+    GTV =2 ;
+    TABLET =3 ;
+    TABLET_LARGE =4 ;
+    ANDROID_TV =5 ;
+    WEAR =6 ;
+    CHROMEBOOK =7 ;
+    ANDROID_AUTO =8 ;
+    HIGH_PERFORMANCE_EMULATOR =10 ;
+    ANDROID_XR =11 ;
+}
+
+message ayzl {
+    optional int64 a = 1;
+    optional int32  b = 2;
+}
+
+message awgc {
+  optional feauture  b = 1;
+}
+
+enum feauture {
+    FEATURED_UNSPECIFIED =0;
+    FEATURED_TV_MOVIES =1;
+    FEATURED_ENTERTAINMENT_VIDEO =2;
+    FEATURED_EBOOK =3;
+    FEATURED_AUDIOBOOK =4;
+    FEATURED_BOOK_SERIES =5;
+    FEATURED_MUSIC =6;
+    FEATURED_PODCAST =7;
+    FEATURED_RADIO =8;
+    FEATURED_SHOPPING_PRODUCT =9;
+    FEATURED_FOOD_PRODUCT =10;
+    FEATURED_RECIPE =11;
+    FEATURED_FOOD_STORE =12;
+    FEATURED_GENERIC_CONTENT =13;
+}
+//--------------------------------bbcz /fdfe 等请求返回值---------------------
+message bbcz {
+    optional bbcy  b= 1;
+//    optional bbfd  c= 2;
+//    optional aymb  f= 12;
+    optional bbfe  g= 5;
+    optional bbow  h= 6;
+    optional bytes  i= 9;
+//    repeated bazk d=3;
+//    repeated bbnt j=4;
+//    repeated axri e=11;
+}
+
+message bbcy {
+//    optional batc f = 1;
+//    optional bapr g = 2;
+//    optional bbdn h = 3;
+//    optional bamt i = 4;
+//    optional bbeb j = 5;
+    optional bbhh k = 6;
+//    optional bamh l = 7;
+//    optional bana ct = 9;
+//    optional bamy m = 11;
+//    optional baox n = 13;
+//    optional bakc o = 14;
+//    optional basy p = 17;
+//    optional bbdp q = 18;
+//    optional bapq r = 19;
+//    optional bbcr cu = 20;
+    optional bapi t = 21;
+//    optional bakb u = 22;
+//    optional bbbk v = 23;
+//    optional bamz cv = 26;
+//    optional bavq w = 27;
+//    optional bayw cw = 29;
+//    optional baof x = 30;
+//    optional bamx y = 31;
+//    optional bbau cx = 32;
+//    optional bbao cy = 33;
+//    optional bbhv cz = 36;
+//    optional bbab cA = 38;
+//    optional bbfc z = 39;
+//    optional bbep A = 40;
+//    optional banm B = 43;
+//    optional bbdf C = 44;
+//    optional bbdg D = 45;
+//    optional baqv E = 46;
+//    optional bazo F = 47;
+//    optional baor G = 49;
+//    optional baxv H = 52;
+//    optional bbhu I = 53;
+//    optional barx J = 54;
+//    optional baft O = 56;
+//    optional bafv P = 57;
+//    optional baeo R = 59;
+//    optional bafp S = 61;
+//    optional baet U = 64;
+//    optional bavz cB = 65;
+//    optional bbar V = 67;
+//    optional bavt W = 70;
+//    optional baug X = 72;
+//    optional azis Y = 74;
+//    optional barv Q = 75;
+//    optional aznc Z = 76;
+//    optional bafi K = 77;
+//    optional bafq aa = 78;
+//    optional azne ab = 79;
+//    optional azoh ac = 80;
+//    optional bbfp ae = 82;
+//    optional baej T = 85;
+//    optional aznr af = 88;
+//    optional baea ag = 89;
+//    optional bafy L = 93;
+//    optional azru ah = 94;
+//    optional bafk M = 95;
+//    optional bafj N = 97;
+//    optional bbcw aj = 98;
+//    optional baey ak = 99;
+//    optional baiy al = 101;
+//    optional azms am = 102;
+//    optional bajk cC = 103;
+//    optional baoh an = 104;
+//    optional baoj ao = 105;
+//    optional azsr ai = 106;
+//    optional babo ap = 109;
+//    optional azua ar = 110;
+//    optional azmx as = 111;
+//    optional azpw at = 112;
+//    optional bbhs au = 113;
+//    optional azol av = 117;
+//    optional azor aw = 118;
+//    optional bagy ax = 120;
+//    optional bahl ay = 123;
+//    optional bagv az = 125;
+//    optional azky aA = 126;
+//    optional bahe aB = 127;
+//    optional bbdo aC = 129;
+//    optional baks aD = 132;
+//    optional bbfh cD = 134;
+//    optional baef aE = 135;
+//    optional bbhz aF = 136;
+//    optional azmb aG = 138;
+//    optional azza aq = 139;
+//    optional azqb aH = 140;
+//    optional bate aI = 141;
+//    optional bajx aJ = 142;
+//    optional baru aK = 143;
+//    optional bbbx aL = 144;
+//    optional axjg aM = 145;
+//    optional bajj aO = 147;
+//    optional bajl aP = 148;
+//    optional baka aQ = 149;
+//    optional bacy aR = 150;
+//    optional bals aS = 151;
+//    optional baei aT = 152;
+//    optional awkb aU = 153;
+//    optional awmm aV = 154;
+//    optional aypf aN = 157;
+//    optional azyq aW = 158;
+//    optional azlg aX = 159;
+//    optional azjj aY = 160;
+//    optional awmh aZ = 161;
+//    optional azxf ba = 162;
+//    optional awki bb = 163;
+//    optional awgl bc = 164;
+//    optional ayka bd = 165;
+//    optional azjo be = 166;
+//    optional azyy bf = 167;
+//    optional bagl bg = 168;
+//    optional azmi cE = 169;
+//    optional aydw bh = 171;
+//    optional azkf bi = 172;
+//    optional awhq bj = 173;
+//    optional axkx bk = 174;
+//    optional azse bl = 175;
+//    optional bags bm = 176;
+//    optional azst bn = 177;
+//    optional bagi bo = 178;
+//    optional bagg bp = 179;
+//    optional awvh bq = 180;
+    optional aynr br = 183;
+//    optional axno bs = 185;
+//    optional awkz bt = 186;
+//    optional axay bu = 187;
+//    optional aygi bv = 188;
+//    optional ayni bw = 189;
+//    optional axlv bx = 190;
+//    optional awjz by = 191;
+//    optional awfw bz = 192;
+//    optional awht bA = 193;
+//    optional axlz bB = 194;
+//    optional ayry bD = 195;
+//    optional aytf bE = 196;
+//    optional axoc bF = 198;
+//    optional awhy bG = 199;
+//    optional aysy bH = 200;
+//    optional awjv bI = 201;
+//    optional awxq bJ = 203;
+//    optional aysz bL = 204;
+//    optional awga bM = 205;
+//    optional axji bN = 206;
+//    optional awjd bO = 207;
+//    optional aytq bP = 209;
+//    optional avzo bQ = 210;
+//    optional awxt bK = 211;
+//    optional awkl bC = 214;
+//    optional awdf bR = 215;
+//    optional awjs bS = 216;
+//    optional awji bT = 217;
+//    optional ayqv bU = 218;
+//    optional aykl bV = 219;
+//    optional ayew bW = 220;
+//    optional awlt bX = 221;
+//    optional ayth bY = 222;
+//    optional awiw bZ = 223;
+//    optional avyz ca = 224;
+//    optional awik cb = 225;
+//    optional awdk cc = 227;
+//    optional ayqy cd = 228;
+//    optional awlx ce = 229;
+//    optional awif cf = 230;
+//    optional azmm ad = 231;
+//    optional awkr cg = 232;
+//    optional awfo ch = 234;
+//    optional awjm ci = 235;
+//    optional awjy cj = 236;
+//    optional awkf ck = 237;
+//    optional awlz cl = 239;
+//    optional awih cm = 240;
+//    optional ayrz s = 241;
+//    optional aysg cn = 242;
+//    optional axdn co = 243;
+//    optional ayqp cp = 244;
+}
+
+message bbhh {
+    optional bool o=11;
+    optional string t=22;
+}
+
+message bbfe {
+    optional int64 b=1;
+}
+
+message bbow {
+    repeated int64 a=1;
+}
+
+message bapi {
+    optional int32 b = 1; //unknow enum
+    optional bbln c = 2;
+}
+
+message bbln {
+    optional int64 b = 1;
+    optional string d = 2;
+    optional string g = 3;
+    repeated bblr k = 4;
+    repeated bbng l = 5;
+    optional bblq m = 11;
+    optional string h = 13;
+    optional int64 c = 14;
+    repeated bbok n = 15;
+    optional bool o = 17;
+    optional bbmq i = 18;
+    optional string e = 19;
+    optional bbnq p = 20;
+    optional bbmz q = 21;
+    optional bbni r = 22;
+    optional bool s = 24;
+    optional bbnl t = 25;
+    optional string f = 26;
+    optional bool u = 27;
+    optional bbnk v = 28;
+    optional int32 w = 29;
+    optional bbmq j = 30;
+}
+
+message bblr {
+    optional int32 b = 1; //unknow enum
+    optional int32 c = 2;
+    optional int64 d = 3;
+    optional string g = 4;
+    optional bblq i = 5;
+    optional int64 f = 6;
+    optional string h = 7;
+    optional string e = 8;
+    optional bbnq j = 9;
+}
+
+message bblq {
+    optional int32 b = 1;
+    optional string d = 2;
+    optional string f = 3;
+    optional int32 g = 4; //unknow enum
+    optional int64 h = 5;
+    optional string c = 7;
+    optional string e = 8;
+}
+
+message bbnq {
+    repeated bbnp a = 1;
+}
+
+message bbnp {
+    optional string a = 1;
+}
+
+message bbng {
+    optional string a = 1;
+    optional string b = 2;
+}
+
+message bbok {
+    optional string b = 1;
+    optional int64 c = 2;
+    optional string d = 4;
+    optional string g = 5;
+    optional bblq h = 7;
+    optional bbmq i = 8;
+    optional string e = 9;
+    optional bbnq k = 10;
+    optional bbmz l = 11;
+    optional bbni m = 12;
+    optional string f = 15;
+    optional bbmq j = 16;
+}
+
+message bbmq {
+    optional int32 b = 1; //unknow enum
+    optional int64 c = 2;
+    optional string d = 3;
+    repeated bbmr e = 4;
+}
+
+message bbmr {
+    optional string a = 1;
+    optional string b = 2;
+    optional int64 c = 3;
+}
+
+message bbmz {
+    optional int64 b = 1;
+    optional string c = 2;
+    optional string d = 3;
+}
+
+message bbni {
+    optional bbnr b = 1;
+    optional bytes c = 2;
+}
+
+message bbnr {
+    optional string a = 1;
+    optional int64 b = 2;
+    optional string c = 3;
+}
+
+message bbnl {
+    repeated string b = 1;
+    optional bbna c = 2;
+    optional bbna d = 3;
+}
+
+message bbna {
+    optional string b = 1;
+    optional int64 c = 2;
+    optional string d = 3;
+    optional bbmq e = 4;
+}
+
+message bbnk {
+    optional int32 a = 2; //unknow enum
+    optional double b = 3;
+    optional bool c = 4;
+}
+
+//--------------------------request for /fdfe/sync--
+message aklr {
+    map<string,akrp> b = 1;
+    optional int64 c = 2;
+}
+
+message akrp {
+    map<int64,aklp> a = 1;
+}
+
+message aklp {
+    oneof b {
+        akls oneofField1 = 1;
+//        akre oneofField2 = 2;
+    }
+}
+
+message akls {
+    optional aynw b = 1;
+    optional int32 c = 2; //unknow enum
+}
+
+message aynq {
+    repeated aynw a = 1;
+}
+
+message aynw {
+    oneof b {
+        ayoi oneofField2 = 2;
+        ayoe oneofField3 = 3;
+        ayof oneofField4 = 4;
+        axdc oneofField5 = 5;
+        ayjc oneofField6 = 6;
+        awms oneofField7 = 7;
+        axch oneofField8 = 8;
+        awyq oneofField9 = 9;
+        axcj oneofField10 = 10;
+        axcn oneofField11 = 11;
+        axcs oneofField12 = 12;
+        axdz oneofField13 = 13;
+        awkg oneofField14 = 14;
+        axlx oneofField15 = 15;
+        axyk oneofField16 = 16;
+        ayed oneofField17 = 17;
+        ayfl oneofField18 = 18;
+        ayft oneofField19 = 19;
+        ayje oneofField20 = 20;
+        aynz oneofField21 = 21;
+        aykp oneofField22 = 22;
+        axbs oneofField23 = 23;
+        axlq oneofField24 = 24;
+        aydz oneofField25 = 25;
+        awzs oneofField26 = 26;
+        awwl oneofField27 = 27;
+        ayff oneofField28 = 28;
+        aynn oneofField29 = 29;
+        ayfd oneofField30 = 30;
+        axcx oneofField31 = 31;
+        ayfj oneofField32 = 32;
+    }
+}
+
+message ayoi {
+    optional string b = 1;
+}
+
+message ayoe {
+}
+
+message ayof {
+}
+
+message axdc {
+    oneof b {
+        axdb oneofField1 = 1;
+        axdd oneofField2 = 2;
+    }
+}
+
+message axdb {
+    oneof c {
+        axda oneofField1 = 1;
+    }
+    optional string d = 2;
+    optional string e = 3;
+}
+
+message axda {
+    optional string b = 1;
+    optional axdj c = 2;
+}
+
+message axdj {
+    optional string a = 1;
+}
+
+message axdd {
+}
+
+message ayjc {
+}
+
+message awms {
+    optional aypl b = 1;
+}
+
+message aypl {
+    optional string b = 1;
+}
+
+message axch {
+    repeated aypl a = 1;
+}
+
+message awyq {
+    optional string b = 1;
+    optional axbl c = 2;
+}
+
+message axbl {
+    optional axbm b = 1;
+}
+
+message axbm {
+    optional int64 b = 1;
+    optional string c = 2;
+    optional string d = 3;
+    optional string e = 4;
+    repeated string f = 5;
+    optional int32 g = 6;
+    optional int32 h = 7;
+}
+
+message axcj {
+    repeated ayny b = 1;
+    repeated string c = 2;
+    repeated string d = 3;
+    repeated string e = 4;
+    optional bool f = 5;
+}
+
+message ayny {
+    optional string b = 1;
+    optional int32 c = 2;
+}
+
+message axcn {
+    optional int32 b = 1; //unknow enum
+    optional bool c = 2;
+    optional int32 d = 3; //unknow enum
+}
+
+message axcs {
+    optional string b = 1;
+    optional string c = 2;
+    optional string d = 3;
+    optional string e = 4;
+    optional string f = 5;
+}
+
+message axdz {
+    optional axzv b = 1;
+    repeated axzv c = 2;
+}
+
+message axzv {
+    optional string b = 1;
+    optional string c = 2;
+    optional string d = 3;
+    optional mangedScope e = 4; //unknow enum
+}
+
+enum mangedScope {
+    UNKNOWN_MANAGED_SCOPE = 0;
+    MANAGED_DEVICES = 1;
+    MANAGED_PROFILES = 2;
+    MANAGED_AVENGER = 3;
+    LEGACY_DEVICE_ADMINS = 4;
+}
+
+message awkg {
+    optional fixed64 b = 1;
+}
+
+message axlx {
+    optional bool b = 1;
+    optional int64 c = 2;
+    optional int32 d = 3;
+    repeated string e = 4;
+}
+
+message axyk {
+    optional string b = 1;
+}
+
+message ayed {
+    optional string b = 1;
+}
+
+message ayfl {
+    optional string b = 1;
+    optional string c = 2;
+    optional string d = 3;
+}
+
+message ayft {
+    optional int32 b = 2;
+}
+
+message ayje {
+    optional int32 b = 1; //unknow enum
+    optional int32 c = 2;
+    optional int32 d = 3;
+    optional int32 e = 4; //unknow enum
+    optional int32 f = 5;
+}
+
+message aynz {
+    optional string b = 1;
+    optional int64 c = 2;
+    optional string d = 3;
+    optional string e = 4;
+    optional string f = 5;
+    optional int32 g = 6;
+}
+
+message aykp {
+    oneof b {
+        aykn oneofField1 = 1;
+        ayko oneofField2 = 2;
+    }
+}
+
+message aykn {
+}
+
+message ayko {
+    optional string b = 1;
+}
+
+message axbs {
+    oneof b {
+        axbq oneofField1 = 1;
+        axbr oneofField2 = 2;
+    }
+}
+
+message axbq {
+}
+
+message axbr {
+    repeated string a = 1;
+}
+
+message axlq {
+    optional axlp b = 1;
+}
+
+message axlp {
+    optional string b = 1;
+    optional string c = 2;
+    optional string d = 3;
+}
+
+message aydz {
+}
+
+message awzs {
+    repeated awzr a = 1;
+}
+
+message awzr {
+    optional string b = 1;
+    optional awgc c = 2;
+}
+
+message awwl {
+    optional int32 b = 1;
+}
+
+message ayff {
+    optional string b = 1;
+}
+
+message aynn {
+    optional aynm b = 1;
+}
+
+message aynm {
+    optional int32 b = 1; //unknow enum
+}
+
+message ayfd {
+}
+
+message axcx {
+    optional axcw b = 1;
+}
+
+message axcw {
+    optional int32 b = 1; //unknow enum
+    optional int32 c = 2; //unknow enum
+}
+
+message ayfj {
+    optional bool b = 1;
+    repeated ayfi c = 2;
+}
+
+message ayfi {
+    optional int32 b = 1; //unknow enum
+    optional int32 c = 2;
+}
+//-----------------response for fdfe/sync
+message aynr {
+    repeated ayns a=1;
+    optional aynu b=2;
+    repeated string c=3;
+}
+
+message ayns {
+    oneof b {
+        aynt oneofField0 = 2;
+//        aynp oneofField1 = 3;
+    }
+    optional int64 c=1;
+}
+
+message aynt {
+    optional aynx a=1;
+    optional int32 b=2; //unknow enum
+}
+
+message aynx {
+    oneof b {
+//        ayoj oneofField0 = 1;
+//        ayog oneofField1 = 2;
+//        ayoh oneofField2 = 3;
+//        axde oneofField3 = 4;
+//        ayjd oneofField4 = 5;
+//        awmt oneofField5 = 6;
+//        axci oneofField6 = 7;
+//        awyr oneofField7 = 8;
+//        axck oneofField8 = 9;
+//        axco oneofField9 = 10;
+//        axct oneofField10 = 11;
+//        axea oneofField11 = 12;
+//        awkh oneofField12 = 13;
+//        axly oneofField13 = 14;
+//        axyl oneofField14 = 15;
+//        ayee oneofField15 = 16;
+//        ayfm oneofField16 = 17;
+//        ayfu oneofField17 = 18;
+//        ayjf oneofField18 = 19;
+//        ayoa oneofField19 = 20;
+//        aykq oneofField20 = 21;
+//        axbw oneofField21 = 22;
+//        axlr oneofField22 = 23;
+//        ayea oneofField23 = 24;
+//        awzu oneofField24 = 25;
+        awwm oneofField25 = 26;
+//        ayfg oneofField26 = 27;
+//        ayno oneofField27 = 28;
+//        ayfe oneofField28 = 29;
+//        axcy oneofField29 = 30;
+//        ayfk oneofField30 = 31;
+    }
+}
+
+message awwm {
+    optional int32 a=1;
+}
+
+//----------------------proto for payloads protostroe------
+message bcfl {
+    optional bcfo b = 1;
+}
+
+message bcfo {
+    optional int64 b = 1;
+    optional string c = 2;
+    optional string d = 3;
+    optional string e = 4;
+    repeated string f = 5;
+    optional int32 g = 6;
+    optional int32 h = 7;
+}
+
+message bcfm {
+    optional int32 b = 1; //unknow enum
+    optional int32 c = 2; //unknow enum
+    optional int32 d = 3; //unknow enum
+    optional int32 e = 4; //unknow enum
+    optional bool g = 5;
+    optional bool h = 6;
+    optional int32 i = 7;
+    optional int32 l = 8;
+    repeated string m = 9;
+    repeated string n = 10;
+    repeated string p = 11;
+    optional int32 j = 12;
+    optional int32 k = 13;
+    repeated string q = 14;
+    repeated string r = 15;
+    optional int32 s = 18;
+    optional bool t = 19;
+    optional int64 u = 20;
+    optional int32 v = 21;
+    repeated bcfn o = 26;
+    optional int32 f = 27; //unknow enum
+    optional string w = 29;
+    optional string x = 30;
+    optional string y = 31;
+}
+
+message bcfn {
+    optional string b = 1;
+    optional int32 c = 2;
+}
+
+message baun {
+    optional string b = 1;
+    optional string c = 2;
+    optional string d = 3;
+    optional policyType e = 4; //unknow enum
+}
+
+enum policyType {
+    UNKNOW = 0;
+    MANAGED_DEVICE = 1;
+    MANAGED_PROFILE = 2;
+    LEGACY_DEVICE_ADMIN = 3;
+}
+

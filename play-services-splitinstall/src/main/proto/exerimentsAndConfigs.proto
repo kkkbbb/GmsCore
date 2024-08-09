@@ -1,0 +1,203 @@
+syntax = "proto2";
+package com.google.android.vending;
+
+message auty {
+  optional autu  b = 1;
+  repeated auts c =2;
+  optional bytes  d = 3;
+  optional action  e = 4;
+  optional int32  g = 5;
+  optional string  f = 7;
+  map<string,string>  h = 11;
+}
+
+enum action {
+    UNSPECIFIED =0;
+    PERIODIC =  1;
+    ADAPTIVE =  2;
+    GCM_PUSH = 3;
+    APPLICATION_PUSH=  4;
+    APPLICATION_PUSH_RETRY=11;
+    NEW_USER=  5;
+    NEW_APPLICATION=  6;
+    NEW_REGISTER_VERSION=  7;
+    NEW_REGISTER_OTHER=  8;
+    MOBDOG= 9;
+    RETRY_AFTER= 10;
+    NEW_USER_SYNC= 12;
+    NEW_APPLICATION_SYNC= 13;
+    NEW_REGISTER_VERSION_SYNC= 14;
+    NEW_REGISTER_OTHER_SYNC= 15;
+    NEW_APP_PROPERTIES= 16;
+    GMSCORE_SAFEBOOT= 17;
+    CHECK_IN= 18;
+    FORCE_SYNC= 19;
+    FLAG_CORRUPTION= 20;
+    FLAG_OVERRIDE= 21;
+    MOBILE_UTILITIES= 22;
+}
+
+message auts {
+  optional auue  b = 1;
+  optional bytes  c = 2;
+  optional bytes  d = 8;
+  repeated auud e =3;
+  optional bytes  f = 4;
+  optional bytes  g = 6;
+}
+
+message unknowMsg {
+  optional int32 field1 = 1;
+}
+
+message auud {
+  optional int64  b = 1;
+  optional bytes  c = 2;
+}
+
+message auue {
+  optional string  b = 1;
+  optional int64  c = 2;
+  optional autw  d = 3;
+  optional sfixed64  e = 4;
+  optional string  f = 5;
+}
+
+message autw {
+  optional fixed64  b = 1;
+}
+
+message autu {
+  optional int64  b = 2;
+  optional bbqz  c = 4;
+  optional string  d = 5;
+  optional bytes  e = 6;
+  optional bool  f = 7;
+  optional auuf  g = 8;
+}
+
+message auuf {
+  optional bytes  b = 1;
+}
+
+message bbqz{
+  optional int32 b = 1;
+  optional bbqy  c = 2;
+  optional bbra e = 16;
+}
+
+message bbra {
+  optional string  c = 9;
+  optional string  d = 1;
+  optional string  e = 2;
+  optional string  f = 16;
+  optional string  g = 18;
+  optional string  h = 17;
+  optional string  i = 3;
+  optional string  j = 4;
+  optional string  k = 5;
+  optional string  l = 6;
+  optional string  m = 7;
+  optional int32  n = 8; //enum
+  optional string  o = 11;
+  optional bool  p = 12;
+  optional int32  q = 13; //enum
+  optional int32  r = 14; //enum
+  optional bool  s = 15;
+  optional int32  t = 19; //enum
+  optional string  u = 20;
+
+}
+
+message bbqy {
+  optional int64  b = 1;
+  optional int32  c = 3;
+  optional string  d = 4;
+  optional string  e = 5;
+  optional string  g = 6;
+    optional string  f = 9;
+  optional string  h = 10;
+  optional string  i = 11;
+  optional string  j = 12;
+  optional string  k = 13;
+  optional string  m = 17;
+  optional string  n = 28;
+  repeated string  o = 31;
+}
+
+//-----------------------------experimentandflags请求返回值的message------------------------------
+message autz {
+  repeated autt a =1;
+  optional bytes  b = 2;
+  optional string  c = 3;
+  optional int64  d = 4;
+  repeated int32  e = 6;
+}
+
+message autt {
+  optional auue  b = 1;
+  repeated auuc c =2;
+  optional bytes  d = 3;
+  optional string  e = 4;
+  repeated autv f =6;
+  optional bytes  g = 7;
+}
+
+message autv {
+  optional auue  a = 1;
+  optional bytes  b = 2;
+  optional int32  c = 3; //enum
+}
+
+message auuc {
+  optional auud  a = 1;
+  repeated auub b =2;
+  optional int32 c = 3; //enum
+}
+
+message auub {
+  optional string  b = 1;
+  optional int64  c = 2;
+  optional bool  d = 3;
+  optional double  e = 4;
+  optional string  f = 5;
+  optional auua  g = 6;
+  optional int32  h = 9; //enum
+}
+
+message auua {
+  optional bytes  a = 1;
+}
+
+//----------------------------experimentsFlags protostore message----
+message aqis {
+    optional string  b = 2;
+    optional bytes  c = 3;
+    optional string  d = 1;
+    optional bool  g = 8;
+    optional int64  h = 9;
+    repeated aqiu e =4;
+    repeated string  f = 5;
+}
+
+message aqiu {
+    oneof c {
+        fixed64 intVal = 1;
+        bool boolVal = 2;
+        double floatVal = 3;
+        string stringVal = 4;
+        bytes extensionVal = 5;
+    }
+    optional string  d = 10;
+}
+
+message autq {
+    optional bytes  b = 1;
+    optional bool  d = 3;
+    repeated bytes  c = 2;
+}
+
+
+
+
+

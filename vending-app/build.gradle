@@ -88,6 +88,7 @@ android {
 }
 
 dependencies {
+    implementation project(':play-services-splitinstall')
     implementation project(':fake-signature')
     implementation project(':play-services-auth')
     implementation project(':play-services-base-core')
